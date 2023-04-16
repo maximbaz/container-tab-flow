@@ -5,6 +5,11 @@
   "version": "1.0.0",
   "author": "Maxim Baz <containertabflow@maximbaz.com>, ChatGPT by OpenAI <contact@openai.com>",
   "permissions": ["tabs"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "containertabflow@maximbaz.com"
+    }
+  },
   "background": {
     "scripts": ["background.js"]
   },
