@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Container Tab Flow",
   "description": "Stay within the current container when closing a tab",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Maxim Baz <containertabflow@maximbaz.com>, ChatGPT by OpenAI <contact@openai.com>",
   "homepage_url": "https://github.com/maximbaz/container-tab-flow",
   "permissions": ["tabs"],

@@ -8,8 +8,9 @@ The extension follows these rules to determine which tab to activate upon closin
 
 1. If there's a tab to the right within the current container, activate it.
 2. Otherwise, if there's a tab to the left within the current container, activate it.
-3. If no suitable tabs are found in the current container, activate the nearest tab to the right.
-4. If there are no tabs to the right, activate the nearest tab to the left.
+3. Otherwise, the built-in Firefox logic kicks in, which by default works as following:
+   a. If there is a tab to the right, activate it.
+   b. Otherwise, if there is a tab to the left, activate it.
 
 ## Installation
 
