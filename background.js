@@ -22,7 +22,8 @@ browser.tabs.onRemoved.addListener(async (tabId, removeInfo) => {
   }
 
   const tabs = await getContainerTabs(removeInfo.windowId, last.cookieStoreId);
-  const adjacentTab = tabs[last.index - 1];
+  const adjacentTab = [0, 1, -1].map(offset => tabs[last.index + offset])
+                                .find(tab => tab && tab.id !== tabId);
   if (adjacentTab) {
     await browser.tabs.update(adjacentTab.id, { active: true });
   }
